@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sanu-Chess Moduler</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--         <link rel="stylesheet" type="text/css" href="css/boostrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">-->
+        <link type="text/css" rel="stylesheet" href="css/Styles.css">
+    </head>
+    <body onload="onStr()">
+ 
+        <div id="divHeader">Chess Menu</div>
+        <div id="divMain">
+            <div id="divNums" style=""></div>
+            <table id="divContainer">
+                <tr id="tr8">
+                    <td class="box whiteBox"><a class="chessPieces"><img src="images/Rook-white.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img src="images/Knight-white.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img  src="images/Bishop-white.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img  src="images/King-white.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img  src="images/Queen-white.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img  src="images/Bishop-white.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img src="images/Knight-white.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img src="images/Rook-white.ico"></a></td>
+
+                </tr>
+                <tr id="tr7">
+                    <td class="box blackBox"><a class="chessPieces"><img  src="images/Pawn-white.ico"></a></td>
+                    <td class="box whiteBox"> <a class="chessPieces" ><img  src="images/Pawn-white.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img  src="images/Pawn-white.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img  src="images/Pawn-white.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img  src="images/Pawn-white.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img  src="images/Pawn-white.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img  src="images/Pawn-white.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img  src="images/Pawn-white.ico"></a></td>
+                </tr>
+
+                <tr id="tr6">
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                </tr>
+
+                <tr id="tr5">
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+
+                </tr>
+                <tr id="tr4">
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+
+                </tr>
+
+                <tr id="tr3">
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+                    <td class="box blackBox"></td>
+                    <td class="box whiteBox"></td>
+
+                </tr>
+
+                <tr id="tr2">
+                    <td class="box whiteBox"><a class="chessPieces"><img  src="images/Pawn-black.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img  src="images/Pawn-black.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img  src="images/Pawn-black.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img  src="images/Pawn-black.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img  src="images/Pawn-black.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img  src="images/Pawn-black.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img  src="images/Pawn-black.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img  src="images/Pawn-black.ico"></a></td>
+
+
+                </tr>
+                <tr id="tr1">
+                    <td class="box blackBox"><a class="chessPieces"><img  src="images/Rook-black.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img  src="images/Knight-black.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img src="images/Bishop-black.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img  src="images/King-black.ico"></a></td>
+                    <td class="box blackBox"><a class="chessPieces"><img  src="images/Queen-black.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img src="images/Bishop-black.ico"></a></td>
+                    <td class="box blackBox" ><a class="chessPieces"><img  src="images/Knight-black.ico"></a></td>
+                    <td class="box whiteBox"><a class="chessPieces"><img  src="images/Rook-black.ico"></a></td>
+
+                </tr>
+            </table>  
+            <div id="divChars"></div>
+            <h1 id="wel" >Game Started<br> Made By Sanu Vithanage</h1>
+           
+        </div>
+<div  id="disp"></div>
+<div id="sds"></div>
+       
+        <button class="btn" onclick="relo()">New Game</button>
+        <button class="btn1" onclick="fadeI()">Left R</button>
+        <button class="btn2" onclick="fadeO()">Right R</button>
+        <div class="bg"></div>
+<div class="lightning flashit"></div>
+
+<svg viewBox="0 0 960 300">
+	<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="80%">SANU CHESS</text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+<!-- This is just a logo-->
+<div id="logo">
+  
+</div>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/logic.js"></script>
+            <script type="text/javascript" src="js/options.js"></script>
+        <script type="text/javascript" src="js/mainDom.js"></script>
+        
+           
+    </body>
+</html>
